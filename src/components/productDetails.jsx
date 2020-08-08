@@ -2,7 +2,10 @@ import React, { Component } from "react";
 
 class ProductDetails extends Component {
   handleSave = () => {
-    // Navigate to /products
+    // Programatic navigation, mainly used when you are Redirecting a user || Submiting a form
+
+    // This code will Redirect the user to given url, when they click the btn
+    this.props.history.push("/products");
   };
 
   render() {
