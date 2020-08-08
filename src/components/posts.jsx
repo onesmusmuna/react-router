@@ -3,7 +3,6 @@ import queryString from "query-string";
 
 const Posts = ({ match, location }) => {
   const results = queryString.parse(location.search);
-  console.log(results);
 
   return (
     <div>
