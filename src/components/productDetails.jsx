@@ -5,7 +5,8 @@ class ProductDetails extends Component {
     // Programatic navigation, mainly used when you are Redirecting a user || Submiting a form
 
     // This code will Redirect the user to given url, when they click the btn
-    this.props.history.push("/products");
+    // && It will not allow them to return back to the previous url, when they click the <- btn
+    this.props.history.replace("/products");
   };
 
   render() {
